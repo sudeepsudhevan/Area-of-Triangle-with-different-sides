@@ -9,7 +9,7 @@
       background-image: linear-gradient(to right, blue, rgba(0,0,255,0));
     }
     h1 {
-      color: green;
+      color: red;
     }
 
     .container {
@@ -29,7 +29,7 @@
 <body>
   <div class="container">
     <h1>Area of a Triangle</h1>
-    <div class="jumbotron">
+    <div class="jumbotron p-3">
       <p>Enter the lengths of the three sides:</p>
       <!-- Use the form-group, form-control, and input-group classes to create input fields with labels -->
       <div class="form-group">
@@ -60,7 +60,10 @@
         </div>
       </div>
       <!-- Use the btn and btn-primary classes to create a button -->
-      <button onclick="calculateArea()" class="btn btn-primary">Calculate</button>
+      <div class="d-flex justify-content-center mt-auto">
+        <button onclick="calculateArea()" class="btn btn-primary">Calculate</button>
+      </div>
+
       <!-- Use the alert and alert-success classes to create an alert box for the result -->
       <div id="result" class="alert alert-success"></div>
     </div>
