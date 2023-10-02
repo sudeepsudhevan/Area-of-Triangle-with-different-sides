@@ -6,7 +6,7 @@
   <style>
     /* You can customize the styles here */
     body {
-      background-color: black;
+      background-image: linear-gradient(to right, blue, rgba(0,0,255,0));
     }
     h1 {
       color: green;
@@ -37,7 +37,7 @@
         <div class="input-group">
           <input id="side1" type="number" class="form-control" placeholder="Enter side 1">
           <div class="input-group-append">
-            <span class="input-group-text">cm</span>
+            <span class="input-group-text">m</span>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
         <div class="input-group">
           <input id="side2" type="number" class="form-control" placeholder="Enter side 2">
           <div class="input-group-append">
-            <span class="input-group-text">cm</span>
+            <span class="input-group-text">m</span>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
         <div class="input-group">
           <input id="side3" type="number" class="form-control" placeholder="Enter side 3">
           <div class="input-group-append">
-            <span class="input-group-text">cm</span>
+            <span class="input-group-text">m</span>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
         var s = (side1 + side2 + side3) / 2;
         var area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
         // Display the result
-        document.getElementById("result").innerHTML = "The area of the triangle is " + area.toFixed(2) + " cm<sup>2</sup>";
+        document.getElementById("result").innerHTML = "The area of the triangle is " + area + " m<sup>2</sup>";
         // Show the alert box
         document.getElementById("result").style.display = "block";
       } else {
