@@ -9,7 +9,10 @@
       background-image: linear-gradient(to right, blue, rgba(0,0,255,0));
     }
     h1 {
-      color: red;
+      text-transform: uppercase;
+	    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
     }
 
     .container {
@@ -60,9 +63,9 @@
         </div>
       </div>
       <!-- Use the btn and btn-primary classes to create a button -->
-      <div class="d-flex justify-content-center mt-auto">
+      
         <button onclick="calculateArea()" class="btn btn-primary">Calculate</button>
-      </div>
+      
 
       <!-- Use the alert and alert-success classes to create an alert box for the result -->
       <div id="result" class="alert alert-success"></div>
